@@ -6,6 +6,6 @@ class CreateQuestions < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_index :answers, :user_id
+    add_index :questions, :user_id
   end
 end
