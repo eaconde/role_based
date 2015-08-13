@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  root 'home#index'
 
-  resources :questions
+  resources :questions do
+    resources :answers
+  end
+
   devise_for :users
-  root to: "home#index"
 end
