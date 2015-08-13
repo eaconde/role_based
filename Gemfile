@@ -45,3 +45,4 @@ end
 
 
 gem 'devise'
+gem 'cancan'
